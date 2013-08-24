@@ -1,20 +1,25 @@
 " origin from pct/vimrc-core
 " https://github.com/pct/vimrc-core
 
-" 設定 vundle
+" --------設定 vundle--------
+" vundle 是一個外掛管理工具
+
+" 設定不兼容vi模式
 set nocompatible
+
+" 設定不檢測文件類型
 filetype off
 
+" 設定runtimepath
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
 Bundle 'Lokaltog/vim-powerline'
-Bundle 'scrooloose/nerdtree'
+"Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-surround'
 " Bundle 'skammer/vim-css-color'
 " Bundle 'vim-scripts/AnsiEsc.vim'
-
 " undo tree plugin
 " Bundle 'sjl/gundo.vim'
 " Bundle 'kien/ctrlp.vim'
@@ -24,30 +29,31 @@ Bundle 'tpope/vim-surround'
 
 " 自動開啟 nerdtree
 " autocmd vimenter * NERDTree
-nnoremap <silent> <F5> : NERDTree<CR>
+" nnoremap <silent> <F5> : NERDTree<CR>
 
 " Gundo 相關設定
 "nnoremap <F6> : GundoToggle<CR>
 
 " 設定 GUI 字型
-set guifont=Monaco:h12
+" 字體樣式及大小
+set guifont=Monaco:h16
 set guioptions-=T
 
 " 使用面板
-" colorscheme Tomorrow-Night-Bright
 colorscheme gummybears
-" 256 色
+
+" 設定使用256 色
 set t_Co=256
 
 " 檔案格式優先
 set ffs=unix,dos ff=unix
 
-" set mouse
+" 設定滑鼠
 set mouse=a
-" set mouse=v
+
 set ttymouse=xterm
 
-" 打開語法效果
+" 語法上色顯示
 syntax on
 
 " 顯示行號
@@ -71,10 +77,10 @@ set smarttab
 set fdm=indent
 set fdc=0
 
-" show the cursor position all the time
+" 設定右下角顯示狀態列說明
 set ruler
 
-" 縮排
+" 設定縮排
 set autoindent
 set smartindent
 
@@ -101,7 +107,9 @@ set fenc=utf-8 enc=utf-8 tenc=utf-8
 set laststatus=2
 
 " syntax fold
-set foldmethod=syntax
+ set foldmethod=syntax
+" 設定不做fold
+set nofoldenable
 
 " 方便中文重排設定
 set formatoptions=mtcql
