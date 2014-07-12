@@ -15,7 +15,7 @@ fi
 
 export PATH="$HOME/bin:/usr/local/bin:/bin:/usr/bin:\
 /usr/games:/usr/X11R6/bin:/sbin:/usr/sbin:/usr/local/sbin:/stand\
-:/usr/local/jdk1.1.8/bin"
+:/usr/local/jdk1.1.8/bin:/usr/local/texlive/2014/bin/x86_64-linux"
 
 export EDITOR=vim
 export PAGER=less
@@ -30,10 +30,10 @@ export LS_COLORS
 umask 022
 #mesg y
 ulimit -c 0
-alias  ls='gnuls --color=always --show-control-chars';
+alias  ls='ls --color=always --show-control-chars';
 alias  la='ls -a';
 alias  ll='ls -lh';
-alias  dir='gnuls --color=always -l --show-control-chars';
+alias  dir='ls --color=always -l --show-control-chars';
 alias  telnet='/usr/bin/telnet -8 ';
 alias  cl='clear'
 FTP_PASSIVE_MODE=NO;	export FTP_PASSIVE_MODE
