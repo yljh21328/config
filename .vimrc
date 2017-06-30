@@ -11,13 +11,13 @@ set nocompatible
 filetype off
 
 " 設定runtimepath
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+" set rtp+=~/.vim/bundle/vundle/
+" call vundle#rc()
 
-Bundle 'gmarik/vundle'
-Bundle 'Lokaltog/vim-powerline'
-"Bundle 'scrooloose/nerdtree'
-Bundle 'tpope/vim-surround'
+" Bundle 'gmarik/vundle'
+" Bundle 'Lokaltog/vim-powerline'
+" Bundle 'scrooloose/nerdtree'
+" Bundle 'tpope/vim-surround'
 " Bundle 'skammer/vim-css-color'
 " Bundle 'vim-scripts/AnsiEsc.vim'
 " undo tree plugin
