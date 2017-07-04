@@ -40,7 +40,7 @@ set guifont=Monaco:h16
 set guioptions-=T
 
 " 使用面板
-colorscheme gummybears
+" colorscheme gummybears
 
 " 設定使用256 色
 set t_Co=256
